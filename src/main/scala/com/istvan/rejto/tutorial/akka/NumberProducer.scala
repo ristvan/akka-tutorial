@@ -12,16 +12,19 @@ object NumberProducer {
     Props(new NumberProducer(consumer))
   }
 }
+
 trait State
 case object Inactive extends State
 case object Active extends State
 
-class NumberProducer(consumer: ActorRef) extends Actor with ActorLogging with FSM[State, Cancellable] {
+case class NumberProducerData(scheduler: Cancellable, number: Int)
+
+class NumberProducer(consumer: ActorRef) extends Actor with ActorLogging with FSM[State, NumberProducerData] {
   import NumberProducer.StartProduction
   import NumberProducer.Produce
   import NumberProducer.StopProduction
   when(Inactive) {
-    case Event(StartProduction, _) =>
+    case Event(StartProduction, NumberProducerData(_, value)) =>
       log.info("Starting Production")
       val scheduler = context.system.scheduler.schedule(
         Duration.Zero,
@@ -32,16 +35,16 @@ class NumberProducer(consumer: ActorRef) extends Actor with ActorLogging with FS
         self,
         Produce
       )(context.system.dispatcher)
-      goto(Active).using(scheduler)
+      goto(Active).using(NumberProducerData(scheduler, value))
   }
   when(Active) {
-    case Event(Produce, timer) =>
-      log.info("New number is produced")
-      consumer ! 42
-      stay().using(timer)
-    case Event(StopProduction, timer) =>
-      timer.cancel()
-      goto(Inactive).using(null)
+    case Event(Produce, NumberProducerData(scheduler, value)) =>
+      log.info("New number is produced: {}", value)
+      consumer ! value
+      stay().using(NumberProducerData(scheduler, value + 1))
+    case Event(StopProduction, NumberProducerData(scheduler, value)) =>
+      scheduler.cancel()
+      goto(Inactive).using(NumberProducerData(null, value))
   }
 
   onTransition {
@@ -52,5 +55,5 @@ class NumberProducer(consumer: ActorRef) extends Actor with ActorLogging with FS
       log.info("Production schedule has been cancelled")
   }
 
-  startWith(Inactive, null)
+  startWith(Inactive, NumberProducerData(null, 1))
 }

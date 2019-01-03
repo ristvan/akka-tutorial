@@ -49,9 +49,9 @@ class NumberProducerTest
       val numberProducer = system.actorOf(NumberProducer.props(this.testActor))
 
       numberProducer ! NumberProducer.StartProduction
-      expectMsg(42)
-      expectMsg(42)
-      expectMsg(42)
+      expectMsg(1)
+      expectMsg(2)
+      expectMsg(3)
       numberProducer ! NumberProducer.StopProduction
       expectNoMessage(FiniteDuration(1, "second"))
     }
