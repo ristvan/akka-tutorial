@@ -17,12 +17,12 @@ class ActorReaper extends Actor with ActorLogging {
 
   def receive : PartialFunction[Any, Unit] = {
     case WatchMe =>
-      log.debug("New actor is registered: " + sender().toString())
+      log.debug("New actor is registered: {}", sender().toString())
       context.watch(sender())
       watched += sender()
     case Terminated(ref) =>
       watched -= ref
-      log.debug("Actor is terminated: " + ref.toString())
+      log.debug("Actor is terminated: {}", ref.toString())
       if (watched.isEmpty) {
         log.debug("No more Actors. The system will be terminated.")
         context.system.terminate()
