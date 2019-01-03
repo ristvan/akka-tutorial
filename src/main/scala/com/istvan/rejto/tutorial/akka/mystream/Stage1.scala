@@ -5,7 +5,7 @@ import akka.actor.{Actor, ActorLogging, ActorRef, Props}
 object Stage1 {
   case class HandleData(number: Int)
 
-  def props(nextStage: ActorRef) = {
+  def props(nextStage: ActorRef): Props = {
     Props(new Stage1(nextStage))
   }
 }

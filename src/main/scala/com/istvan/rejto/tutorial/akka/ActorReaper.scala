@@ -13,9 +13,9 @@ object ActorReaper {
 class ActorReaper extends Actor with ActorLogging {
   import ActorReaper._
 
-  val watched = ArrayBuffer.empty[ActorRef]
+  val watched: ArrayBuffer[ActorRef] = ArrayBuffer.empty[ActorRef]
 
-  def receive = {
+  def receive : PartialFunction[Any, Unit] = {
     case WatchMe =>
       log.debug("New actor is registered: " + sender().toString())
       context.watch(sender())

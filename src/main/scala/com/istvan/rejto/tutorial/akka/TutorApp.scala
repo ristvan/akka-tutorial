@@ -5,14 +5,12 @@ import com.istvan.rejto.tutorial.akka.mystream.{Stage1, Stage2}
 
 class TutorApp(reaperActor: ActorRef, stage1: ActorRef) extends Actor with ActorLogging {
   override def receive: Receive = {
-    case "Done" => {
+    case "Done" =>
       log.info("DONE")
       context.stop(self)
-    }
-    case message: String => {
+    case message: String =>
       log.info(message)
       stage1 ! Stage1.HandleData(6)
-    }
   }
 
   reaperActor ! ActorReaper.WatchMe

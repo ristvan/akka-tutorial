@@ -21,7 +21,7 @@ class NumberProducer(consumer: ActorRef) extends Actor with ActorLogging with FS
   import NumberProducer.Produce
   import NumberProducer.StopProduction
   when(Inactive) {
-    case Event(StartProduction, _) => {
+    case Event(StartProduction, _) =>
       log.info("Starting Production")
       val scheduler = context.system.scheduler.schedule(
         Duration.Zero,
@@ -33,28 +33,23 @@ class NumberProducer(consumer: ActorRef) extends Actor with ActorLogging with FS
         Produce
       )(context.system.dispatcher)
       goto(Active).using(scheduler)
-    }
   }
   when(Active) {
-    case Event(Produce, timer) => {
+    case Event(Produce, timer) =>
       log.info("New number is produced")
       consumer ! 42
       stay().using(timer)
-    }
-    case Event(StopProduction, timer) => {
+    case Event(StopProduction, timer) =>
       timer.cancel()
       goto(Inactive).using(null)
-    }
   }
 
   onTransition {
-    case Inactive -> Active => {
+    case Inactive -> Active =>
       log.info("Production has been scheduled")
-    }
 
-    case Active -> Inactive => {
+    case Active -> Inactive =>
       log.info("Production schedule has been cancelled")
-    }
   }
 
   startWith(Inactive, null)
