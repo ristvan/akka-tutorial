@@ -5,27 +5,27 @@ import akka.actor.{Actor, ActorLogging, ActorRef, Props, Terminated}
 import scala.collection.mutable.ArrayBuffer
 
 object ActorReaper {
-  case class WatchMe()
-  def props: Props =
-    Props[ActorReaper]
+    case class WatchMe()
+    def props: Props =
+        Props[ActorReaper]
 }
 
 class ActorReaper extends Actor with ActorLogging {
-  import ActorReaper._
+    import ActorReaper._
 
-  val watched: ArrayBuffer[ActorRef] = ArrayBuffer.empty[ActorRef]
+    val watched: ArrayBuffer[ActorRef] = ArrayBuffer.empty[ActorRef]
 
-  def receive : PartialFunction[Any, Unit] = {
-    case WatchMe =>
-      log.debug("New actor is registered: {}", sender().toString())
-      context.watch(sender())
-      watched += sender()
-    case Terminated(ref) =>
-      watched -= ref
-      log.debug("Actor is terminated: {}", ref.toString())
-      if (watched.isEmpty) {
-        log.debug("No more Actors. The system will be terminated.")
-        context.system.terminate()
-      }
-  }
+    def receive : PartialFunction[Any, Unit] = {
+        case WatchMe =>
+            log.debug("New actor is registered: {}", sender().toString())
+            context.watch(sender())
+            watched += sender()
+        case Terminated(ref) =>
+            watched -= ref
+            log.debug("Actor is terminated: {}", ref.toString())
+            if (watched.isEmpty) {
+                log.debug("No more Actors. The system will be terminated.")
+                context.system.terminate()
+            }
+    }
 }
