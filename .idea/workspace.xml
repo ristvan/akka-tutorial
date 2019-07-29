@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="958ce466-a2a7-4cd2-8f4e-abc8e9f5a436" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/Worker.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/scatterandgather/TestScatterAndGather.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandler.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandler.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandlerTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandlerTest.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandler.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
+            <state relative-caret-position="782">
               <caret line="47" column="27" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="27" />
               <folding>
                 <element signature="e#40#101#0" expanded="true" />
@@ -74,14 +74,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandlerTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="459">
+              <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
               <folding>
                 <element signature="e#40#69#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/scatterandgather/TestScatterAndGather.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+              <folding>
+                <element signature="e#57#102#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/Worker.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -113,6 +134,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Scala Object" />
+        <option value="Package Object" />
       </list>
     </option>
   </component>
@@ -145,6 +167,8 @@
         <option value="$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/ScmaChangedEventHandlerTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandler.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandlerTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/Worker.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/scatterandgather/TestScatterAndGather.scala" />
       </list>
     </option>
   </component>
@@ -203,25 +227,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="akka" type="462c0819:PsiDirectoryNode" />
-              <item name="dataflow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AkkaTutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="akka" type="462c0819:PsiDirectoryNode" />
-              <item name="dispatcher" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AkkaTutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="akka" type="462c0819:PsiDirectoryNode" />
-              <item name="mystream" type="462c0819:PsiDirectoryNode" />
+              <item name="scatterandgather" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AkkaTutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -243,6 +249,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="akka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AkkaTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="akka-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="akka" type="462c0819:PsiDirectoryNode" />
+              <item name="scatterandgather" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -280,7 +295,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="ScalaTest.ScmChangedEventHandlerTest">
+  <component name="RunManager" selected="ScalaTest.TestScatterAndGather">
     <configuration name="TutorApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.istvan.rejto.tutorial.akka.TutorApp" />
       <module name="AkkaTutorial" />
@@ -348,8 +363,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestScatterAndGather" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="AkkaTutorial" />
+      <setting name="path" value="com.istvan.rejto.tutorial.akka.scatterandgather.TestScatterAndGather" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <setting name="jrePath" value="" />
+      <envs />
+      <setting name="testKind" value="Class" />
+      <setting name="path" value="com.istvan.rejto.tutorial.akka.scatterandgather.TestScatterAndGather" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="ScalaTest.TestScatterAndGather" />
         <item itemvalue="ScalaTest.ScmChangedEventHandlerTest" />
         <item itemvalue="Application.TutorApp" />
       </list>
@@ -452,39 +486,46 @@
       <option name="project" value="LOCAL" />
       <updated>1563390715475</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fix an of the test cases&#10;&#10;It seems tests are running parallel with the same test actor.&#10;That means all the answers to events sent by both tests are received&#10;within both test cases.">
+      <created>1564346391505</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564346391505</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ScmChangedEventHandlerTest - 2019.07.18 at 21h 04m 46s.xml">
-      <configuration name="ScmChangedEventHandlerTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestScatterAndGather - 2019.07.28 at 23h 13m 14s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScmChangedEventHandlerTest - 2019.07.18 at 21h 07m 50s.xml">
-      <configuration name="ScmChangedEventHandlerTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestScatterAndGather - 2019.07.28 at 23h 15m 03s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScmChangedEventHandlerTest - 2019.07.18 at 21h 10m 52s.xml">
-      <configuration name="ScmChangedEventHandlerTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestScatterAndGather - 2019.07.28 at 23h 16m 55s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScmChangedEventHandlerTest - 2019.07.18 at 21h 11m 33s.xml">
-      <configuration name="ScmChangedEventHandlerTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestScatterAndGather - 2019.07.28 at 23h 18m 19s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScmChangedEventHandlerTest - 2019.07.28 at 20h 01m 39s.xml">
-      <configuration name="ScmChangedEventHandlerTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestScatterAndGather - 2019.07.28 at 23h 19m 48s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScmChangedEventHandlerTest - 2019.07.28 at 21h 56m 05s.xml">
-      <configuration name="ScmChangedEventHandlerTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestScatterAndGather - 2019.07.28 at 23h 20m 22s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScmChangedEventHandlerTest - 2019.07.28 at 21h 58m 10s.xml">
-      <configuration name="ScmChangedEventHandlerTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestScatterAndGather - 2019.07.29 at 09h 02m 09s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScmChangedEventHandlerTest - 2019.07.28 at 21h 59m 29s.xml">
-      <configuration name="ScmChangedEventHandlerTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestScatterAndGather - 2019.07.29 at 18h 05m 05s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScmChangedEventHandlerTest - 2019.07.28 at 22h 00m 29s.xml">
-      <configuration name="ScmChangedEventHandlerTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestScatterAndGather - 2019.07.29 at 18h 09m 29s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScmChangedEventHandlerTest - 2019.07.28 at 22h 00m 55s.xml">
-      <configuration name="ScmChangedEventHandlerTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestScatterAndGather - 2019.07.29 at 18h 13m 03s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -500,7 +541,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49470899" visible="true" weight="0.31343284" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49470899" visible="true" weight="0.31663114" />
       <window_info id="Structure" order="1" sideWeight="0.505291" side_tool="true" weight="0.26639676" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -592,7 +633,8 @@
     <MESSAGE value="Use 4 spaces to indentation" />
     <MESSAGE value="Add actors to dispatcher" />
     <MESSAGE value="Add actor where two synchronous incoming event is expected" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add actor where two synchronous incoming event is expected" />
+    <MESSAGE value="Fix an of the test cases&#10;&#10;It seems tests are running parallel with the same test actor.&#10;That means all the answers to events sent by both tests are received&#10;within both test cases." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix an of the test cases&#10;&#10;It seems tests are running parallel with the same test actor.&#10;That means all the answers to events sent by both tests are received&#10;within both test cases." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/StageCommunication.scala" />
@@ -683,6 +725,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/package.scala" />
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/srcs/akka-actor_2.12-2.5.19-sources.jar!/akka/actor/ActorRef.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="106" column="16" lean-forward="true" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/NumberProducer.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -707,6 +757,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandler.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="47" column="27" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="27" />
+          <folding>
+            <element signature="e#40#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandlerTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+          <folding>
+            <element signature="e#40#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/NumberProducerTest.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -724,22 +794,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandler.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/Worker.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="47" column="27" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="27" />
-          <folding>
-            <element signature="e#40#101#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandlerTest.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/scatterandgather/TestScatterAndGather.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="425">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding>
-            <element signature="e#40#69#0" expanded="true" />
+            <element signature="e#57#102#0" expanded="true" />
           </folding>
         </state>
       </provider>
