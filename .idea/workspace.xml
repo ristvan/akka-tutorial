@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="958ce466-a2a7-4cd2-8f4e-abc8e9f5a436" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/Worker.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/scatterandgather/TestScatterAndGather.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/TutorApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/TutorApp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/Worker.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/Worker.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/scatterandgather/TestScatterAndGather.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/scatterandgather/TestScatterAndGather.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,67 +34,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/NumberProducer.scala">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/scatterandgather/TestScatterAndGather.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" selection-start-line="10" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/dispatcher/Master.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="323">
+              <caret line="37" column="51" lean-forward="true" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
               <folding>
-                <element signature="e#51#95#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/dispatcher/Worker.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandler.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="47" column="27" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="27" />
-              <folding>
-                <element signature="e#40#101#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandlerTest.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-              <folding>
-                <element signature="e#40#69#0" expanded="true" />
+                <element signature="e#57#86#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/scatterandgather/TestScatterAndGather.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/ScatterGather.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+            <state relative-caret-position="247">
+              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
               <folding>
-                <element signature="e#57#102#0" expanded="true" />
+                <element signature="e#57#113#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/TutorApp.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+              <folding>
+                <element signature="e#40#109#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/srcs/akka-actor_2.12-2.5.19-sources.jar!/akka/routing/ScatterGatherFirstCompleted.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="175" column="49" selection-start-line="175" selection-start-column="17" selection-end-line="175" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -101,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/Worker.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="289">
+              <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -110,7 +90,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/NumberProducerTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
+            <state relative-caret-position="400">
               <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
               <folding>
                 <element signature="e#40#78#0" expanded="true" />
@@ -157,7 +137,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/mystream/StageCommunication.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/mystream/StageCommunication.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/mystream/Stage1.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/TutorApp.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/ActorReaper.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/mystream/Stage2.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/NumberProducerTest.scala" />
@@ -167,8 +146,10 @@
         <option value="$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/ScmaChangedEventHandlerTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandler.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandlerTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/Worker.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/scatterandgather/TestScatterAndGather.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/Worker.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/TutorApp.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/ScatterGather.scala" />
       </list>
     </option>
   </component>
@@ -295,7 +276,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="ScalaTest.TestScatterAndGather">
+  <component name="RunManager" selected="Application.TutorApp">
     <configuration name="TutorApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.istvan.rejto.tutorial.akka.TutorApp" />
       <module name="AkkaTutorial" />
@@ -383,9 +364,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TutorApp" />
         <item itemvalue="ScalaTest.TestScatterAndGather" />
         <item itemvalue="ScalaTest.ScmChangedEventHandlerTest" />
-        <item itemvalue="Application.TutorApp" />
       </list>
     </recent_temporary>
   </component>
@@ -493,31 +474,17 @@
       <option name="project" value="LOCAL" />
       <updated>1564346391505</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Try ScatterGatherFirst Routing without success">
+      <created>1564426237963</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1564426237963</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestScatterAndGather - 2019.07.28 at 23h 13m 14s.xml">
-      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestScatterAndGather - 2019.07.28 at 23h 15m 03s.xml">
-      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestScatterAndGather - 2019.07.28 at 23h 16m 55s.xml">
-      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestScatterAndGather - 2019.07.28 at 23h 18m 19s.xml">
-      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestScatterAndGather - 2019.07.28 at 23h 19m 48s.xml">
-      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestScatterAndGather - 2019.07.28 at 23h 20m 22s.xml">
-      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestScatterAndGather - 2019.07.29 at 09h 02m 09s.xml">
-      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestScatterAndGather - 2019.07.29 at 18h 05m 05s.xml">
       <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
@@ -525,6 +492,27 @@
       <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
     <history-entry file="TestScatterAndGather - 2019.07.29 at 18h 13m 03s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestScatterAndGather - 2019.07.29 at 20h 47m 08s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestScatterAndGather - 2019.07.29 at 20h 48m 44s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestScatterAndGather - 2019.07.29 at 22h 23m 09s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestScatterAndGather - 2019.07.30 at 19h 46m 22s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestScatterAndGather - 2019.07.30 at 21h 10m 11s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestScatterAndGather - 2019.07.30 at 21h 18m 31s.xml">
+      <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestScatterAndGather - 2019.07.30 at 21h 19m 27s.xml">
       <configuration name="TestScatterAndGather" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
@@ -541,7 +529,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49470899" visible="true" weight="0.31663114" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49470899" visible="true" weight="0.31982943" />
       <window_info id="Structure" order="1" sideWeight="0.505291" side_tool="true" weight="0.26639676" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -634,7 +622,8 @@
     <MESSAGE value="Add actors to dispatcher" />
     <MESSAGE value="Add actor where two synchronous incoming event is expected" />
     <MESSAGE value="Fix an of the test cases&#10;&#10;It seems tests are running parallel with the same test actor.&#10;That means all the answers to events sent by both tests are received&#10;within both test cases." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix an of the test cases&#10;&#10;It seems tests are running parallel with the same test actor.&#10;That means all the answers to events sent by both tests are received&#10;within both test cases." />
+    <MESSAGE value="Try ScatterGatherFirst Routing without success" />
+    <option name="LAST_COMMIT_MESSAGE" value="Try ScatterGatherFirst Routing without success" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/StageCommunication.scala" />
@@ -696,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/TutorApp.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/ScmaChangedEventHandlerTest.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/dataflow/MessageHandover.scala">
       <provider selected="true" editor-type-id="text-editor">
@@ -733,6 +715,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandlerTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+          <folding>
+            <element signature="e#40#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/NumberProducer.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -757,36 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandler.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="47" column="27" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="27" />
-          <folding>
-            <element signature="e#40#101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandlerTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="e#40#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/NumberProducerTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-          <folding>
-            <element signature="e#40#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/ActorReaper.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -794,19 +756,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/Worker.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/ScmChangedEventHandler.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        <state relative-caret-position="501">
+          <caret line="47" column="27" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="27" />
+          <folding>
+            <element signature="e#40#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/NumberProducerTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+          <folding>
+            <element signature="e#40#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/srcs/akka-actor_2.12-2.5.19-sources.jar!/akka/routing/ScatterGatherFirstCompleted.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="175" column="49" selection-start-line="175" selection-start-column="17" selection-end-line="175" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/istvan/rejto/tutorial/akka/scatterandgather/TestScatterAndGather.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        <state relative-caret-position="323">
+          <caret line="37" column="51" lean-forward="true" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
           <folding>
-            <element signature="e#57#102#0" expanded="true" />
+            <element signature="e#57#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/Worker.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/TutorApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+          <folding>
+            <element signature="e#40#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/istvan/rejto/tutorial/akka/scatterandgather/ScatterGather.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+          <folding>
+            <element signature="e#57#113#0" expanded="true" />
           </folding>
         </state>
       </provider>
