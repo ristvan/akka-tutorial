@@ -1,9 +1,9 @@
 package com.istvan.rejto.tutorial.akka
 
 import akka.actor.{Actor, ActorLogging, ActorRef, ActorSystem, Props}
-import akka.routing.ScatterGatherFirstCompletedGroup
+import akka.routing.{ScatterGatherFirstCompletedGroup, ScatterGatherFirstCompletedPool}
 import com.istvan.rejto.tutorial.akka.mystream.{Stage1, Stage2}
-import com.istvan.rejto.tutorial.akka.scatterandgather.{ScatterGather, Worker}
+import com.istvan.rejto.tutorial.akka.scatterandgather.{PoolWorker, ScatterGather, Worker, WorkerRegistry}
 
 import scala.concurrent.duration._
 
@@ -25,32 +25,51 @@ object TutorApp {
         Props(new TutorApp(reaper, stage1))
     }
 
-    def main(args: Array[String]): Unit = {
-        println("Start of My program")
-        val as = ActorSystem.create("MyActorSystem")
-
+    def scatterAndGatherGroup(actorSystem: ActorSystem): Unit = {
         val workers = List(
-            as.actorOf(Worker.props(4, 0), name = "worker1"),
-            as.actorOf(Worker.props(4, 1), name = "worker2"),
-            as.actorOf(Worker.props(4, 2), name = "worker3"),
-            as.actorOf(Worker.props(4, 3), name = "worker4"),
+            actorSystem.actorOf(Worker.props(4, 0), name = "worker1"),
+            actorSystem.actorOf(Worker.props(4, 1), name = "worker2"),
+            actorSystem.actorOf(Worker.props(4, 2), name = "worker3"),
+            actorSystem.actorOf(Worker.props(4, 3), name = "worker4"),
         )
         val paths = workers.map(worker => worker.path.toString)
-        val router = as.actorOf(ScatterGatherFirstCompletedGroup(paths, 4.seconds).props(), name = "Router")
+        val router = actorSystem.actorOf(ScatterGatherFirstCompletedGroup(paths, 4.seconds).props(), name = "GroupRouter")
 
-        val scatterGather = as.actorOf(ScatterGather.props(router), "ScatterGather")
+        val scatterGatherGroup = actorSystem.actorOf(ScatterGather.props(router), "ScatterGatherGroup")
+        scatterGatherGroup ! "5"
+        scatterGatherGroup ! List(5, 6, 7, 8)
+    }
 
-        scatterGather ! "5"
-        scatterGather ! List(5, 6, 7, 8)
+    def scatterAndGatherPool(actorSystem: ActorSystem): Unit = {
+        val registry = actorSystem.actorOf(Props(new WorkerRegistry), name = "WorkerRegistry")
 
-        val reaper = as.actorOf(ActorReaper.props)
+        val pool = actorSystem.actorOf(
+            new ScatterGatherFirstCompletedPool(5, 4.seconds).props(
+                Props.create(classOf[PoolWorker], registry)
+            )
+        )
 
-        val stage2 = as.actorOf(Stage2.props(), "stage2")
-        val stage1 = as.actorOf(Stage1.props(stage2), "stage1")
+        val scatterGatherPooler = actorSystem actorOf(ScatterGather.props(pool), name = "ScatterGatherPool")
 
-        val act = as.actorOf(TutorApp.props(reaper, stage1), "tutor01")
+        scatterGatherPooler ! List(10, 11, 12, 13)
+    }
 
-        Thread.sleep(6000)
+    def main(args: Array[String]): Unit = {
+        println("Start of My program")
+
+        val actorSystem = ActorSystem.create("MyActorSystem")
+
+//        scatterAndGatherGroup(actorSystem)
+        scatterAndGatherPool(actorSystem)
+
+        val reaper = actorSystem.actorOf(ActorReaper.props)
+
+        val stage2 = actorSystem.actorOf(Stage2.props(), "stage2")
+        val stage1 = actorSystem.actorOf(Stage1.props(stage2), "stage1")
+
+        val act = actorSystem.actorOf(TutorApp.props(reaper, stage1), "tutor01")
+
+        Thread.sleep(10000)
         act ! "Message"
     }
 }

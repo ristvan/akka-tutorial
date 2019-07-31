@@ -1,2 +1,6 @@
 *.class
 *.log
+.idea/*
+akka-tutorial.iml
+build.sbt
+build.properties
